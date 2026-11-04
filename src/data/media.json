@@ -1,0 +1,70 @@
+{
+	"hero": [
+		{
+			"src": "/media/hero/01.jpg",
+			"alt": "ordinateur portable sur bureau en bois"
+		},
+		{
+			"src": "/media/hero/02.jpg",
+			"alt": "croquis de maquettes web"
+		},
+		{
+			"src": "/media/hero/03.jpg",
+			"alt": "carnet ux et macbook"
+		},
+		{
+			"src": "/media/hero/04.jpg",
+			"alt": "graphiques d analyse sur ecran"
+		},
+		{
+			"src": "/media/hero/05.jpg",
+			"alt": "wireframe dessine a la main"
+		},
+		{
+			"src": "/media/hero/06.jpg",
+			"alt": "application mobile tableau de bord"
+		},
+		{
+			"src": "/media/hero/07.jpg",
+			"alt": "post it sur un mur"
+		},
+		{
+			"src": "/media/hero/08.jpg",
+			"alt": "iphone et imac sur bureau"
+		},
+		{
+			"src": "/media/hero/09.jpg",
+			"alt": "espace de travail deux ecrans"
+		},
+		{
+			"src": "/media/hero/10.jpg",
+			"alt": "atelier post it en equipe"
+		},
+		{
+			"src": "/media/hero/11.jpg",
+			"alt": "bureau de nuit et lampe"
+		},
+		{
+			"src": "/media/hero/12.jpg",
+			"alt": "macbook sur table"
+		}
+	],
+	"about": {
+		"src": "/media/about/01.jpg",
+		"alt": "portrait nabil mohamed hagos"
+	},
+	"testimonials": [
+		{
+			"src": "/media/testimonials/01.jpg",
+			"alt": "mains qui se tiennent"
+		},
+		{
+			"src": "/media/testimonials/02.jpg",
+			"alt": "graphique sur ecran"
+		},
+		{
+			"src": "/media/testimonials/03.jpg",
+			"alt": "courses au supermarche"
+		}
+	]
+}

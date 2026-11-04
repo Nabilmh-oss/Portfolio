@@ -1,0 +1,137 @@
+/* iPhone 16 en HTML/CSS — dessiné à 423 × 876 px puis mis à l'échelle
+   (src/components/ui/iphone-mockup.tsx). Couleur : variables --ma / --mb / --hi. */
+.ip {
+  --ma: #3a3b3f;
+  --mb: #1d1e21;
+  --hi: rgba(255, 255, 255, 0.28);
+  position: relative;
+  width: 100%;
+  aspect-ratio: 423 / 876;
+}
+.ip[data-color='white'] { --ma: #f3f3f1; --mb: #cfd0cc; --hi: rgba(255, 255, 255, 0.9); }
+.ip[data-color='teal'] { --ma: #9fc7c4; --mb: #6f9996; --hi: rgba(255, 255, 255, 0.55); }
+.ip[data-color='ultramarine'] { --ma: #8fa3ee; --mb: #5b6fcb; --hi: rgba(255, 255, 255, 0.5); }
+.ip[data-color='pink'] { --ma: #f3c4d3; --mb: #d99ab0; --hi: rgba(255, 255, 255, 0.6); }
+
+.ip-device {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 423px;
+  height: 876px;
+  transform-origin: top left;
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.45)) drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
+}
+.ip-btn { position: absolute; width: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--mb), var(--ma)); }
+.ip-btn.l { left: 0; }
+.ip-btn.r { left: 419px; background: linear-gradient(90deg, var(--ma), var(--mb)); }
+.ip-action { top: 150px; height: 32px; }
+.ip-volup { top: 212px; height: 62px; }
+.ip-voldn { top: 286px; height: 62px; }
+.ip-power { top: 238px; height: 98px; }
+.ip-camctl { top: 552px; height: 70px; width: 3px; }
+.ip-body {
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 417px;
+  height: 876px;
+  border-radius: 72px;
+  background: linear-gradient(145deg, var(--ma) 0%, var(--mb) 55%, var(--ma) 100%);
+  box-shadow: inset 0 0 0 1.5px var(--hi), inset 0 0 0 3px rgba(0, 0, 0, 0.35);
+}
+.ip-bezel { position: absolute; inset: 6px; border-radius: 66px; background: #000; box-shadow: inset 0 0 0 1px #15161a; }
+.ip-screen {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  width: 393px;
+  height: 852px;
+  border-radius: 55px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.ip-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.ip-glass {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 38%);
+}
+.ip-island {
+  position: absolute;
+  left: 50%;
+  top: 11px;
+  z-index: 2;
+  width: 126px;
+  height: 37px;
+  margin-left: -63px;
+  border-radius: 20px;
+  background: #000;
+}
+.ip-island::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #27324d 0, #0b0f1c 55%, #000 100%);
+  box-shadow: 0 0 0 2px #05060a;
+}
+.ip-home {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  z-index: 2;
+  width: 134px;
+  height: 5px;
+  margin-left: -67px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Rangée d'iPhone — src/components/ui/iphone-strip.tsx */
+.ip-strip {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* place pour les ombres portées */
+  padding: 8px 4px 36px;
+  margin: -8px -4px 0;
+}
+.ip-strip::-webkit-scrollbar { display: none; }
+.ip-strip:focus-visible { outline: 1px solid var(--color-paper); outline-offset: 4px; }
+.ip-strip.is-dragging { scroll-snap-type: none; scroll-behavior: auto; cursor: grabbing; }
+/* Espace de fin : permet au dernier iPhone de venir se caler à gauche comme les autres */
+.ip-strip::after {
+  content: '';
+  flex: 0 0 calc(100% - (100% - 3 * 24px) / 3.4 - 24px);
+}
+.ip-strip-item {
+  /* ~3,4 iPhone visibles : le suivant dépasse, on comprend qu'il faut faire défiler */
+  flex: 0 0 calc((100% - 3 * 24px) / 3.4);
+  scroll-snap-align: start;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .ip-strip { gap: 16px; }
+  .ip-strip-item { flex-basis: calc((100% - 16px) / 1.6); }
+  .ip-strip::after { flex-basis: calc(100% - (100% - 16px) / 1.6 - 16px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ip-strip { scroll-behavior: auto; }
+}
