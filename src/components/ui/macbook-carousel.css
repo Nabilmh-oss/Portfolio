@@ -1,0 +1,57 @@
+/* Styles du carrousel MacBook (src/components/ui/macbook-carousel.tsx) et du MacBook sombre. */
+
+/* ---------- MacBook gris sidéral (variante sombre) ---------- */
+.mb-dark .mb-lid {
+  background: #0b0c0f;
+  box-shadow: inset 0 0 0 2px #2c2f36, inset 0 0 0 4px #000;
+}
+.mb-dark .mb-base {
+  background: linear-gradient(180deg, #4a4e57 0%, #2a2d34 100%);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.22), inset 0 -3px 4px rgba(0, 0, 0, 0.4);
+}
+.mb-dark .mb-base::before {
+  background: linear-gradient(180deg, #1d2026, #3a3e47);
+}
+
+/* ---------- Carrousel dans l'écran — src/components/ui/macbook-carousel.tsx ---------- */
+.mb-carousel-screen {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #04060b;
+  touch-action: pan-y;
+  user-select: none;
+}
+.mb-carousel-screen:focus-visible {
+  outline: 6px solid var(--color-paper);
+  outline-offset: 6px;
+}
+.mb-carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(0.22, 0.8, 0.24, 1);
+  will-change: transform;
+}
+.mb-carousel-track.is-dragging {
+  transition: none;
+}
+.mb-carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  margin: 0;
+}
+.mb-carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mb-carousel-track {
+    transition: none;
+  }
+}

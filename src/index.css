@@ -1,0 +1,160 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
+  --font-pixel: 'Geist Pixel', 'Geist Mono', ui-monospace, monospace;
+
+  /* Strictly black & white */
+  --color-ink: #0e0e0e;
+  --color-paper: #f2f2f2;
+  --color-stone: #7b7b7b;
+  --color-line: #262626;
+  /* Accent: only on small details. Defaults to white = pure black & white.
+     Set at runtime from THEME in src/data/site.ts */
+  --color-accent: #f2f2f2;
+  --color-accent-ink: #0e0e0e;
+  /* Small section labels: grey in black & white, accent otherwise */
+  --color-label: #7b7b7b;
+
+  --animate-blink: blink 1.05s steps(1) infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    background: var(--color-ink);
+  }
+
+  body {
+    @apply bg-ink font-mono text-paper antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-accent-ink;
+  }
+}
+
+/* Film grain laid over the whole site */
+@utility grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Native cursor: default everywhere, pointer on everything clickable */
+a[href],
+button:not(:disabled),
+[role='button'],
+select,
+summary,
+label[for] {
+  cursor: pointer;
+}
+
+@keyframes pixel-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================================
+   MOCKUP MACBOOK À ÉCRAN DÉFILANT — src/components/ui/macbook-mockup.tsx
+   ============================================================ */
+.mb-device {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1640px;
+  height: 984px;
+  transform-origin: top left;
+  filter: drop-shadow(0 50px 60px rgba(0, 0, 0, 0.45)) drop-shadow(0 12px 18px rgba(0, 0, 0, 0.3));
+}
+.mb-lid {
+  position: absolute;
+  left: 76px;
+  top: 0;
+  width: 1488px;
+  height: 952px;
+  background: #1b1b1d;
+  border-radius: 30px 30px 8px 8px;
+  padding: 24px 24px 28px;
+  box-shadow: inset 0 0 0 2px #3a3a3e, inset 0 0 0 4px #0c0c0d;
+}
+.mb-cam {
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2d3b57, #0b0f18 70%);
+}
+.mb-screen {
+  width: 1440px;
+  height: 900px;
+  background: #fff;
+  border-radius: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.35) transparent;
+}
+.mb-screen:focus-visible {
+  outline: 6px solid var(--color-accent);
+  outline-offset: 6px;
+}
+.mb-screen::-webkit-scrollbar {
+  width: 10px;
+}
+.mb-screen::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mb-screen::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.mb-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.mb-base {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1640px;
+  height: 32px;
+  background: linear-gradient(180deg, #dcdee1 0%, #b6b9be 100%);
+  border-radius: 4px 4px 44px 44px / 4px 4px 32px 32px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.7), inset 0 -3px 4px rgba(0, 0, 0, 0.12);
+}
+.mb-base::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 230px;
+  height: 12px;
+  margin-left: -115px;
+  background: linear-gradient(180deg, #a7aaaf, #cfd1d5);
+  border-radius: 0 0 14px 14px;
+}
+/* Au doigt : une fois en bas de l'écran du MacBook, la fenêtre reprend le défilement */
+@media (pointer: coarse) {
+  .mb-screen {
+    overscroll-behavior: auto;
+  }
+}

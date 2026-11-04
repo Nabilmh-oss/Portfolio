@@ -1,0 +1,242 @@
+[
+	{
+		"slug": "mission-donneur-hug-heig",
+		"title": "Mission Donneur — HUG × HEIG",
+		"category": "UX/UI & communication",
+		"year": 2026,
+		"details": [
+			{
+				"label": "Client",
+				"value": "HUG × HEIG"
+			},
+			{
+				"label": "Rôle",
+				"value": "Maquettage, communication visuelle, concept événementiel"
+			},
+			{
+				"label": "Livrables",
+				"value": "Plateforme web, posts, affiches, remise des trophées"
+			},
+			{
+				"label": "Outils",
+				"value": "Figma, Canva, Adobe Illustrator,"
+			},
+			{
+				"label": "Lien",
+				"value": "missiondonneur.ch"
+			}
+		],
+		"summary": "Une solution digitale et communicationnelle pour encourager les entreprises à participer aux collectes de sang des HUG.",
+		"description": [
+			"Objectif du projet : concevoir une solution digitale et communicationnelle pour encourager les entreprises à participer aux collectes de sang des HUG et valoriser leur engagement. Le projet a abouti à la plateforme missiondonneur.ch, réalisée avec mon équipe de projet.",
+			"Maquettage des interfaces : conception des maquettes et réflexion sur l’organisation visuelle et l’expérience utilisateur de la plateforme.",
+			"Communication visuelle : création de posts et d’affiches destinés à promouvoir le don du sang et à sensibiliser les entreprises et leurs collaborateurs.",
+			"Concept de remise des trophées : développement du concept de remise des trophées afin de valoriser les entreprises participantes et de renforcer l’attractivité du Trophée de la Générosité.",
+			"Compétences mobilisées : maquettage d’interfaces, conception UX/UI, communication digitale, création de supports visuels, conceptualisation événementielle et travail en équipe."
+		],
+		"cover": {
+			"src": "/projects/assets/5371799c2d54a9f749550677fc306b6a.jpg",
+			"alt": "",
+			"width": 2116,
+			"height": 1178
+		},
+		"gallery": [
+			{
+				"src": "/projects/assets/6d5e00e0c986f082cf2fd6fc107c0d47.jpg",
+				"alt": "Mascotte Mission Donneur",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/64169cca1bd397236a0679c817dde965.jpg",
+				"alt": "Affiche promotionnelle",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/dbe0c072b7852c16462221664f0b1f7b.jpg",
+				"alt": "Affiche promotionnelle",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/b568af0c4523d65c2119d26f396ddcf3.jpg",
+				"alt": "Affiche promotionnelle",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/ccff053ee5b870cffdec6fc36b727da1.jpg",
+				"alt": "Idée de post HUG",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/b38ed980fc630382c5feadc0c914b577.jpg",
+				"alt": "Idée de post HUG",
+				"type": "image"
+			}
+		]
+	},
+	{
+		"slug": "bitcoin-visualdon",
+		"title": "Bitcoin — VisualDon",
+		"category": "Data visualisation",
+		"year": null,
+		"details": [
+			{
+				"label": "Client",
+				"value": "Cours de visualisation de données"
+			},
+			{
+				"label": "Rôle",
+				"value": "Maquettage, recherche, narration"
+			},
+			{
+				"label": "Livrables",
+				"value": "Documentaire web interactif, maquette Figma"
+			},
+			{
+				"label": "Outils",
+				"value": "Figma, HTML5 & CSS3, JS, D3.js, JSON, GeoJSON"
+			},
+			{
+				"label": "Lien",
+				"value": "kingjamesgoat.github.io/visualdon_bitcoin_project"
+			},
+			{
+				"label": "GitHub",
+				"value": "https://github.com/KingJamesGOAT/visualdon_bitcoin_project/blob/main/README.md"
+			}
+		],
+		"summary": "Un documentaire web interactif sur la centralisation institutionnelle du Bitcoin.",
+		"description": [
+			"Objectif du projet : concevoir un documentaire web interactif permettant de comprendre comment les grandes entreprises et les États influencent la répartition des richesses en Bitcoin, à travers une narration visuelle accessible au grand public. Projet réalisé en binôme dans le cadre du cours de visualisation de données.",
+			"Maquettage des interfaces : conception de la maquette sur Figma, organisation des éléments visuels et réflexion sur la structure interactive du documentaire.",
+			"Recherche et analyse : recherche de données et de sources pertinentes sur la détention du Bitcoin par les acteurs institutionnels, ainsi que réflexion critique sur les limites et les biais des données disponibles.",
+			"Construction narrative : participation à la définition de l’angle éditorial et du parcours explicatif visant à rendre des données financières complexes compréhensibles.",
+			"Compétences mobilisées : conception UX/UI, maquettage sur Figma, recherche documentaire, analyse critique des données, vulgarisation de sujets financiers complexes et conception de récits interactifs."
+		],
+		"cover": {
+			"src": "/projects/assets/925f5456936d7f2d64623c705a83a44e.jpg",
+			"alt": "Pièce de bitcoin dorée",
+			"width": 2000,
+			"height": 1336
+		},
+		"gallery": [
+			{
+				"src": "/projects/assets/134b14d8659cbc8e5de31d576ee2ebf9.jpg",
+				"alt": "",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/7fd2ad5e14a634b52374ad4e080f4b26.jpg",
+				"alt": "",
+				"type": "image"
+			}
+		]
+	},
+	{
+		"slug": "nutrione",
+		"title": "NutriOne",
+		"category": "Concept d’application",
+		"year": null,
+		"details": [
+			{
+				"label": "Client",
+				"value": "Projet d’équipe"
+			},
+			{
+				"label": "Rôle",
+				"value": "Idéation, UX/UI, modèle économique"
+			},
+			{
+				"label": "Livrables",
+				"value": "Concept, maquettes, offre gratuite et Premium"
+			},
+			{
+				"label": "Outils",
+				"value": "Figma"
+			},
+			{
+				"label": "Lien",
+				"value": "figma.com/deck/Zmj1HcLY0y1eAkXb50wDog"
+			}
+		],
+		"summary": "Une application qui analyse la qualité nutritionnelle d’un panier de courses à partir d’une photo du ticket de caisse.",
+		"description": [
+			"Objectif du projet : imaginer une application mobile permettant d’analyser la qualité nutritionnelle d’un panier de courses à partir d’une simple photo du ticket de caisse. Le projet vise à simplifier la compréhension des habitudes alimentaires grâce à un score global et à des visualisations accessibles. Concept clé : transformer un ticket de caisse, document habituellement peu exploité, en un outil de compréhension et de suivi des habitudes alimentaires.",
+			"Idéation du concept : identification du problème, définition de la proposition de valeur et conception du fonctionnement général de l’application.",
+			"Maquettage des interfaces : réflexion sur l’organisation des informations et la restitution visuelle des résultats nutritionnels pour offrir une expérience simple et intuitive.",
+			"Conception de l’offre : structuration des fonctionnalités gratuites et Premium, avec un modèle d’abonnement à 7.95 CHF par mois.",
+			"Réflexion stratégique : identification des possibilités d’évolution, notamment les recommandations personnalisées, les recettes adaptées aux achats et les partenariats avec les enseignes de grande distribution.",
+			"Compétences mobilisées : idéation, conception UX/UI, maquettage d’interfaces, définition d’une proposition de valeur, conception de fonctionnalités numériques et réflexion sur un modèle économique SaaS."
+		],
+		"cover": {
+			"src": "/projects/assets/52a330ef71b50805a4492a004ac052a8.jpg",
+			"alt": "",
+			"width": 2048,
+			"height": 2048
+		},
+		"gallery": []
+	},
+	{
+		"slug": "court-metrage-prevention-du-dopage",
+		"title": "Court-métrage — prévention du dopage",
+		"category": "Vidéo",
+		"year": null,
+		"details": [
+			{
+				"label": "Client",
+				"value": "Projet de cours"
+			},
+			{
+				"label": "Rôle",
+				"value": "Script, prise de vue, montage"
+			},
+			{
+				"label": "Livrables",
+				"value": "Vidéo de prévention (1 min 30)"
+			},
+			{
+				"label": "Outils",
+				"value": "Adobe Premiere Pro, Photoshop"
+			},
+			{
+				"label": "Lien",
+				"value": "https://drive.google.com/drive/folders/1-gzdTV79KmB8i2npS_7cRcA_aTDbljiu?usp=dri"
+			}
+		],
+		"summary": "Une vidéo de prévention d’environ 1 min 30 sur les dangers du dopage dans le sport.",
+		"description": [
+			"Objectif du projet : réaliser une vidéo de prévention d’environ 1 min 30 visant à sensibiliser le public aux dangers du dopage dans le sport, en transmettant un message clair à travers un format audiovisuel court. Projet réalisé dans le cadre d’un cours.",
+			"Rédaction du script : développement de l’idée et structuration du scénario afin de transmettre efficacement le message de prévention.",
+			"Prise de vue : réalisation des séquences vidéo nécessaires pour mettre en scène le concept imaginé.",
+			"Montage vidéo : assemblage des séquences et réalisation du montage final sur Adobe Premiere Pro.",
+			"Compétences mobilisées : rédaction de scripts, conception narrative, prise de vue, montage vidéo sur Adobe Premiere Pro et communication audiovisuelle."
+		],
+		"cover": {
+			"src": "/projects/assets/d7ec8d02b8374751982a890c1034a0da.jpg",
+			"alt": "Affiche du court-métrage",
+			"width": 944,
+			"height": 1334
+		},
+		"gallery": [
+			{
+				"src": "/projects/assets/b985907189e7345d650acc1aaf5e336f.jpg",
+				"alt": "",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/6aabdb1325c80e1f2ad94019af7e9ec7.jpg",
+				"alt": "",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/ef62d90984b2cd414b6fcb6d9d2dc96e.jpg",
+				"alt": "",
+				"type": "image"
+			},
+			{
+				"src": "/projects/assets/507cb7caa63ee38e06b2ae70ecb1a89d.jpg",
+				"alt": "",
+				"type": "image"
+			}
+		]
+	}
+]
