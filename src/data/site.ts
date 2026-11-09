@@ -18,6 +18,8 @@ export const ACCENT_PRESETS = {
 
 export const SITE = {
 	name: 'Nabil Mohamed Hagos',
+	/** Address of the site online (used in llms.txt) */
+	url: 'https://portfolio-o14c.vercel.app',
 	email: 'nabil.mohamedh@hes-so.ch',
 	/** Optional — leave empty ('') to hide the phone everywhere */
 	phone: '',
